@@ -19,19 +19,19 @@ test('matches valid phone numbers', ()=>{
 })
 
 test('matches valid emails', ()=>{
-    expect(functions.isPhoneNumber('abc@gmail.com')).toBe(true);
+    expect(functions.isEmail('abc@gmail.com')).toBe(true);
 })
 
 test('matches valid emails', ()=>{
-    expect(functions.isPhoneNumber('abc@email.com')).toBe(true);
+    expect(functions.isEmail('abc@email.com')).toBe(true);
 })
 
 test('matches valid emails', ()=>{
-    expect(functions.isPhoneNumber('1234')).toBe(false);
+    expect(functions.isEmail('1234')).toBe(false);
 })
 
 test('matches valid emails', ()=>{
-    expect(functions.isPhoneNumber('abcd')).toBe(false);
+    expect(functions.isEmail('abcd')).toBe(false);
 })
 
 test('isStrongPassword', ()=>{
@@ -71,15 +71,15 @@ test('isHexColor', ()=>{
 })
 
 test('isHexColor', ()=>{
-    expect(functions.isDate('#dbd')).toBe(true);
+    expect(functions.isHexColor('#abc')).toBe(true);
 })
 
 test('isHexColor', ()=>{
-    expect(functions.isDate('1234')).toBe(false);
+    expect(functions.isHexColor('1234')).toBe(false);
 })
 
 test('isHexColor', ()=>{
-    expect(functions.isDate('#33')).toBe(false);
+    expect(functions.isHexColor('#33')).toBe(false);
 })
 
 
